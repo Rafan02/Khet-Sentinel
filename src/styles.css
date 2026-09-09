@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "Figtree", "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --color-bg: #efe8d8;
+  --color-fg: #1c2418;
+  --color-muted: #5b6454;
+  --color-surface: #f7f2e6;
+  --color-surface-2: #ebe3d0;
+  --color-primary: #2a5634;
+  --color-primary-foreground: #f4efe3;
+  --color-accent: #3d6b7a;
+  --color-accent-foreground: #f4efe3;
+  --color-border: #d4cbb6;
+  --color-ring: #2a5634;
+  --color-card: #faf6ec;
+  --color-card-foreground: #1c2418;
+  --color-secondary: #e4dcc8;
+  --color-secondary-foreground: #1c2418;
+  --color-danger: #7a3a32;
+  --color-danger-foreground: #faf6ec;
+  --color-warn: #8a5a2b;
+  --color-warn-foreground: #faf6ec;
+  --color-ink: #1c2418;
+  --color-paper: #efe8d8;
+  --color-soil: #6a4e34;
+  --color-canal: #3d6b7a;
+  --color-bund: #cbb98a;
+  --color-plot-excellent: #245c32;
+  --color-plot-healthy: #3d7a48;
+  --color-plot-dry: #b08948;
+  --color-plot-wet: #2f5f68;
+  --color-plot-pest: #7a4630;
+  --color-plot-nitrogen: #c4b15a;
+  --color-plot-soil-dry: #8b6b45;
+  --color-plot-soil-wet: #4a3a28;
+  --color-plot-soil-ok: #5c4630;
+  --color-plot-soil-pest: #4a3224;
+  --color-plot-lesion: #5c2e22;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(28, 36, 24, 0.06),
+    0px 1px 2px -1px rgba(28, 36, 24, 0.06),
+    0px 2px 4px 0px rgba(28, 36, 24, 0.04);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgba(28, 36, 24, 0.1),
+    0px 1px 2px -1px rgba(28, 36, 24, 0.08),
+    0px 6px 16px -8px rgba(28, 36, 24, 0.12);
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-micro: 80ms;
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+  --motion-slow: 400ms;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.field-board {
+  background:
+    linear-gradient(180deg, rgba(61, 107, 122, 0.18), rgba(61, 107, 122, 0.08) 18%, transparent 38%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(42, 86, 52, 0.05) 0 12px,
+      transparent 12px 24px
+    ),
+    var(--color-bund);
+}

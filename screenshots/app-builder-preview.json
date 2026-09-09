@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Khet Sentinel",
+      "hasCanvas": false,
+      "bodyTextLen": 1388,
+      "bodyTextHash": "a36de83c560c9f94d4ce5cb33d1e07981c99dcddec712f168b67152c17844fa1",
+      "bodyTextPrefix": "Khet Sentinel AMAN FIELD INTELLIGENCE Field Sensors Advise How i",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Khet Sentinel",
+      "hasCanvas": false,
+      "bodyTextLen": 1376,
+      "bodyTextHash": "e12dc1bd483e20e89032377fdaa47ac03aecc180997d2cbbe0bdc056f5e354ee",
+      "bodyTextPrefix": "Khet Sentinel AMAN FIELD INTELLIGENCE RAJIB KHANDAKAR · PABA, RA",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
